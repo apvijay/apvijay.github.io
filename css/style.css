@@ -19,6 +19,7 @@ body {
 h1,h2,h4 {
     font-family: Eczar;
     font-weight: normal;
+    /* margin: 0; */
 }
 h1 {
     margin-left: -0.35rem;
@@ -80,4 +81,21 @@ a {
     border: 1px solid var(--pen-color);
     margin: 0 5px 0 0;
     border-radius: 5px;
+}
+hr {
+    /* height: 0px; */
+    /* border-width: 13px; */
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0 0 8px 0;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
 }
