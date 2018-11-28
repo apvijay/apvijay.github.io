@@ -1,0 +1,82 @@
+:root {
+    --pen-color:#303080;
+    --link-color:#303030;
+}
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+body { 
+    font-family: Gentium Basic, serif; 
+    font-weight: normal;
+    font-size: 18px;
+    width: auto;
+    margin: 3rem;
+    line-height: 1.5;
+    /* margin-left: 4rem; */
+    /* margin-top: 4rem; */
+}
+h1,h2,h4 {
+    font-family: Eczar;
+    font-weight: normal;
+}
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+
+
+q {
+    padding: 0rem;
+    font-style: italic;
+    margin: 0rem;
+    color: var(--pen-color);
+}
+.container {
+    max-width: 55rem;
+}
+.paper-title {
+    color: var(--pen-color);
+    font-weight: bold;
+}
+td.edu {
+    vertical-align: top;
+    min-width: 4rem;
+    /* line-height: 1.25; */
+}
+.table-icon{
+    width: 13rem;
+    border: 1px solid var(--pen-color);
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+}
+td {
+    line-height: 1.25;
+    padding-bottom: 1rem;
+}
+table {
+    font: inherit;
+}
+code {
+    /* padding: .25em .5em; */
+    font-size: 85%;
+    color: var(--pen-color);
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--link-color);
+}
+.photo-icon{
+    width: 8rem;
+    border: 1px solid var(--pen-color);
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+}
