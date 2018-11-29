@@ -82,6 +82,11 @@ a {
     text-decoration: none;
     border-bottom: 1px dashed var(--link-color);
 }
+a.icon {
+    text-decoration: none;
+    border: none;
+    font-size: 75%;
+}
 .photo-icon{
     width: 8rem;
     border: 1px solid var(--pen-color);
@@ -104,4 +109,12 @@ hr {
     border: none;
     border-top: 1px solid #aaaaaa;
     border-bottom: 1px solid #ffffff;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+}
+li:before {
+    content: "\26F6";
+    margin: 0 0.5rem;
 }
