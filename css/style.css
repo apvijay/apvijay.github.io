@@ -51,6 +51,12 @@ td.edu {
     min-width: 4rem;
     /* line-height: 1.25; */
 }
+td.dissem {
+    vertical-align: top;
+    min-width: 7rem;
+    /* line-height: 1.25; */
+    padding-bottom: 0rem;
+}
 .table-icon{
     width: 13rem;
     border: 1px solid var(--pen-color);
