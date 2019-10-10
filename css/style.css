@@ -2,19 +2,13 @@
     --pen-color:#303080;
     --link-color:#303030;
 }
-@font-face {
-	font-family: "Decovar";
-	src: url("fonts/DecovarAlpha-VF.ttf");
-}
 * {
     margin: 0rem;
     padding: 0rem;
 }
 body { 
-/*     font-family: Source Sans Pro, sans-serif;  */
-    font-family: "Decovar";
-	font-variation-settings: "TRMD" 400;
-/*     font-weight: lighter; */
+    font-family: Source Sans Pro, sans-serif; 
+    font-weight: lighter;
     font-size: 18px;
     width: auto;
     margin: 3rem;
