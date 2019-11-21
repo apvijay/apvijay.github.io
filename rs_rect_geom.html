@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131122962-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131122962-1');
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <base target="_blank">
+    <title>
+        Vijay Rengarajan
+    </title>
+</head>
+
+<body>
+    <div class="container">
+
+    <h2>From Bows to Arrows: Rolling Shutter Rectification of Urban Scenes</h2>
+    Vijay Rengarajan, A.N. Rajagopalan, R. Aravind<br>
+    Computer Vision and Pattern Recognition (CVPR) 2016<br>
+
+    <br>
+<h2>Abstract</h2>
+<hr>
+<p>
+The rule of perspectivity that ‘straight-lines-must-
+remain-straight’ is easily inflected in CMOS cameras by
+distortions introduced by motion. Lines can be rendered
+as curves due to the row-wise exposure mechanism known
+as rolling shutter (RS). We solve the problem of correcting
+distortions arising from handheld cameras due to RS effect
+from a single image free from motion blur with special relevance 
+to urban scenes. We develop a procedure to extract
+prominent curves from the RS image since this is essential
+for deciphering the varying row-wise motion. We pose an
+optimization problem with line desirability costs based on
+straightness, angle, and length, to resolve the geometric
+ambiguities while estimating the camera motion based on a
+rotation-only model assuming known camera intrinsic matrix. 
+Finally, we rectify the RS image based on the estimated
+camera trajectory using inverse mapping. We show rectification 
+results for RS images captured using mobile phone
+cameras. We also compare our single image method against
+existing video and nonblind RS rectification methods that
+typically require multiple images.</p>
+
+<br>
+
+<h2>Publication</h2>
+<hr>
+From Bows to Arrows: Rolling Shutter Rectification of Urban Scenes<br>
+Vijay Rengarajan, A.N. Rajagopalan, R. Aravind<br>
+Computer Vision and Pattern Recognition (CVPR)<br>
+Las Vegas, June 2016<br>
+
+<a href="pdf/2016_cvpr.pdf">Paper</a> <br>
+<a href="pdf/2016_cvpr_supp.pdf">Supplementary</a> <br>
+<a href="pdf/2016_cvpr_poster.pdf">Poster</a> <br>
+
+<br>
+
+<h2>Results</h2>
+<hr>
+Given a single RS image, we detect curves and estimate the row-wise camera motion modelled as a polynomial that would make them straight under angle and length constraints. Finally, the RS image is rectifed using the estimated motion. 
+![alt text](../img/rs_rect_eg_curve.png "Curve Detection")
+![alt text](../img/rs_rect_eg_iter.png "Iterations")

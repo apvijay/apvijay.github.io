@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131122962-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131122962-1');
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <base target="_blank">
+    <title>
+        Vijay Rengarajan
+    </title>
+</head>
+
+<body>
+    <div class="container">
+
+    <h2>Unrolling the Shutter: CNN to Correct Motion Distortions</h2>
+    Vijay Rengarajan, Yogesh Balaji, A.N. Rajagopalan<br>
+    Computer Vision and Pattern Recognition (CVPR) 2017<br>
+
+    <br>
+
+    <h2>Abstract</h2>
+    <hr>
+    <p>
+Row-wise exposure delay present in CMOS cameras is responsible for skew and curvature distortions known as the rolling shutter (RS) effect while imaging under camera motion. Existing RS correction methods resort to using multiple images or tailor scene-specific correction schemes. We propose a convolutional neural network (CNN) architecture that automatically learns essential scene features from a single RS image to estimate the row-wise camera motion and undo RS distortions back to the time of first-row exposure. We employ long rectangular kernels to specifically learn the effects produced by the row-wise exposure. Experiments reveal that our proposed architecture performs better than the conventional CNN employing square kernels. Our single-image correction method fares well even operating in a frame-by-frame manner against video-based methods and performs better than scene-specific correction schemes even under challenging situations.</p>
+
+<br>
+
+<h2>Publication</h2>
+<hr>
+Unrolling the Shutter: CNN to Correct Motion Distortions<br>
+Vijay Rengarajan, Yogesh Balaji, A.N. Rajagopalan<br>
+Computer Vision and Pattern Recognition (CVPR)<br>
+Honolulu, July 2017<br>
+
+<a href="pdf/2017_cvpr.pdf">Paper</a> <br>
+<a href="pdf/2017_cvpr_supp.pdf">Supplementary</a> <br>
+<a href="pdf/2017_cvpr_poster.pdf">Poster</a> <br>
+
+
+<br>
+
+<h2>Code</h2>
+<hr>
+<a href="https://github.com/yogeshbalaji/CVPR17_Unrolling_the_shutter">GitHub</a>
+<br>
+
+<br>
+
+<h2>Data</h2>
+<hr>
+<a href="http://www.ee.iitm.ac.in/~ee11d035/building.tar.gz">Building Training Dataset</a><br>
+
+
+<a href="http://www.ee.iitm.ac.in/~ee11d035/face.tar.gz">Face Training Dataset</a><br>
+
+
+<a href="http://www.ee.iitm.ac.in/~ee11d035/cvpr17_test_dataset.zip">Test Dataset (Building, Face, Synthetic Motion)</a><br>
+
+
+<br>
+
+<h2>Results</h2>
+<hr>
+Given a single rolling shutter distorted image, our RowColCNN maps it to camera motion which is used to rectify the distortions.
+![alt text](../img/rs_rect_cnn_eg.png "Examples")

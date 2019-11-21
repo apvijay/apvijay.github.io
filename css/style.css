@@ -29,7 +29,7 @@ h2 {
     font-size: 24px;
 }
 h4 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: lighter;
 }
 
@@ -41,11 +41,16 @@ q {
     color: var(--pen-color);
 }
 .container {
-    max-width: 55rem;
+    max-width: 70rem;
 }
 .paper-title {
     color: var(--pen-color);
     font-weight: bold;
+}
+.area-title {
+    color: var(--pen-color);
+    font-weight: bold;
+    font-size: 20px;
 }
 td.edu {
     vertical-align: top;
@@ -59,7 +64,7 @@ td.dissem {
     padding-bottom: 0rem;
 }
 .table-icon{
-    width: 13rem;
+    width: 18rem;
     border: 1px solid var(--pen-color);
     margin: 0 5px 0 0;
     border-radius: 5px;
@@ -118,4 +123,10 @@ ul {
 li:before {
     content: "\26F6";
     margin: 0 0.5rem;
+}
+p {
+    text-align: justify;
+}
+tr:nth-child(even) {
+    background-color: #f5f5f5;
 }
